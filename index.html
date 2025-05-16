@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changing Fashion Trends in India</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="hero">
+    <h1>Changing Fashion Trends in the Indian Market</h1>
+    <p>Understanding modern influence, culture, technology, and sustainability shaping Indian fashion today</p>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#traditional">Traditional to Contemporary</a></li>
+      <li><a href="#technology">Technology in Fashion</a></li>
+      <li><a href="#advantages">Advantages</a></li>
+      <li><a href="#disadvantages">Disadvantages</a></li>
+      <li><a href="#code">Interactive Code</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="overview">
+      <h2>Overview</h2>
+      <p>The Indian fashion industry has undergone a massive transformation over the past two decades. With global exposure, social media, e-commerce, and an evolving youth demographic, the fashion market is more dynamic than ever. Indian designers are pushing boundaries while maintaining cultural heritage, and consumers are more experimental, aware, and responsive to trends.</p>
+    </section>
+
+    <section id="traditional">
+      <h2>Traditional to Contemporary</h2>
+      <p>While traditional wear like sarees, salwar kameez, and lehengas remain popular, contemporary styling, fusion wear, and Indo-western designs dominate urban markets. Younger consumers prefer versatile pieces that combine comfort and aesthetics. Labels like FabIndia, Biba, and W have adapted traditional styles into casual wear, bridging the gap between old and new fashion values.</p>
+    </section>
+
+    <section id="technology">
+      <h2>Technology in Fashion</h2>
+      <p>Technology is reshaping the fashion industry in India through AI styling assistants, 3D garment design, virtual try-ons, and sustainable textile innovations. E-commerce platforms like Myntra and Ajio use machine learning for personalized recommendations. Blockchain is slowly being introduced for supply chain transparency and fair trade in luxury fashion.</p>
+    </section>
+
+    <section id="advantages">
+      <h2>Advantages of Changing Trends</h2>
+      <ul>
+        <li>Increased creativity and innovation among designers.</li>
+        <li>Wider choices and accessibility for consumers.</li>
+        <li>Global market reach for Indian brands.</li>
+        <li>Adoption of sustainable practices and materials.</li>
+        <li>More inclusive fashion representing body positivity and diverse cultures.</li>
+      </ul>
+    </section>
+
+    <section id="disadvantages">
+      <h2>Disadvantages of Changing Trends</h2>
+      <ul>
+        <li>Fast fashion culture leads to environmental degradation.</li>
+        <li>Loss of authenticity in traditional handlooms.</li>
+        <li>High pressure on local artisans due to rapid trend changes.</li>
+        <li>Market saturation with copycat brands.</li>
+        <li>Increased consumerism and waste.</li>
+      </ul>
+    </section>
+
+    <section id="code">
+      <h2>Interactive Section: Code Integration</h2>
+      <p>Use the buttons below to explore small snippets in different languages.</p>
+      <div class="code-block">
+        <button onclick="showCode('js')">JavaScript</button>
+        <button onclick="showCode('py')">Python</button>
+        <button onclick="showCode('java')">Java</button>
+
+        <pre id="codeDisplay"></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Fashion Trends India Blog. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- styles.css -->
+<style>
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #fefefe;
+  color: #333;
+}
+
+.hero {
+  background: linear-gradient(to right, #f76b1c, #fcb045);
+  color: white;
+  padding: 50px;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+}
+
+.navbar {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+main {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  color: #f76b1c;
+  border-bottom: 2px solid #fcb045;
+  padding-bottom: 10px;
+}
+
+.code-block button {
+  background-color: #f76b1c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.code-block pre {
+  background-color: #222;
+  color: #0f0;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+  overflow-x: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fcb045;
+  color: white;
+}
+</style>
+
+<!-- script.js -->
+<script>
+function showCode(lang) {
+  let code = '';
+  if (lang === 'js') {
+    code = `// JavaScript Example
+const fashionItems = ["Saree", "Kurta", "Jeans"];
+fashionItems.forEach(item => console.log(item));`;
+  } else if (lang === 'py') {
+    code = `# Python Example
+fashion_items = ["Saree", "Kurta", "Jeans"]
+for item in fashion_items:
+    print(item)`;
+  } else if (lang === 'java') {
+    code = `// Java Example
+public class Fashion {
+  public static void main(String[] args) {
+    String[] items = {"Saree", "Kurta", "Jeans"};
+    for (String item : items) {
+      System.out.println(item);
+    }
+  }
+}`;
+  }
+  document.getElementById("codeDisplay").innerText = code;
+}
+</script>
